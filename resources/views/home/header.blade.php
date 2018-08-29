@@ -1,8 +1,8 @@
 <header role="banner" class="probootstrap-header">
     <div class="container">
-        <a href="index.html" class="probootstrap-logo">Vintage<span></span></a>
+        <img src="img/logo.png" alt="Logo Vintage" height="50px" style="color:#B2D430;">
         
-        <a href="#" class="probootstrap-burger-menu visible-xs" ><i>Menu</i></a>
+        <a href="javascript:;" class="probootstrap-burger-menu visible-xs" ><i>Menu</i></a>
         <div class="mobile-menu-overlay"></div>
 
         <nav role="navigation" class="probootstrap-nav hidden-xs">
