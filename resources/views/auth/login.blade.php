@@ -5,107 +5,47 @@
 @stop
 
 @section('content')
- <!--<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
-			<div class="panel panel-default">
-				<div class="panel-heading">Login</div>
-				<div class="panel-body">
-					@if (count($errors) > 0)
-						<div class="alert alert-danger">
-							<strong>Whoops!</strong> There were some problems with your input.<br><br>
-							<ul>
-								@foreach ($errors->all() as $error)
-									<li>{{ $error }}</li>
-								@endforeach
-							</ul>
-						</div>
-					@endif
+<div class="my-login">
+	<div class="col-md-8 image-login">
+	</div>
 
-					<form class="form-horizontal" role="form" method="POST" action="/login">
-						<input type="hidden" name="_token" value="{{ csrf_token() }}">
+	<div class="col-md-4 form-login text-center">
+		<div class="logo-login">
+			<img src="img/logo.png" alt="Logo Vintage" height="80px">
+		</div>
+		<form class="form-horizontal" role="form" method="POST" action="/login">
+			<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-						<div class="form-group">
-							<label class="col-md-4 control-label">E-Mail Address</label>
-							<div class="col-md-6">
-								<input type="email" class="form-control" name="email" value="{{ old('email') }}">
-							</div>
-						</div>
+			<div class="group">      
+				<input type="text" name="email" value="{{ old('email') }}" autocomplete="off">
+				<span class="highlight"></span>
+				<span class="bar"></span>
+				<label>Usuario</label>
+			</div>
 
-						<div class="form-group">
-							<label class="col-md-4 control-label">Password</label>
-							<div class="col-md-6">
-								<input type="password" class="form-control" name="password">
-							</div>
-						</div>
+			<div class="group">      
+				<input type="text" required>
+				<input type="text" name="email" value="{{ old('email') }}" autocomplete="off">
+				<span class="highlight"></span>
+				<span class="bar"></span>
+				<label>Usuario</label>
+			</div>
 
-						<div class="form-group">
-							<div class="col-md-6 col-md-offset-4">
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" name="remember"> Remember Me
-									</label>
-								</div>
-							</div>
-						</div>
-
-						<div class="form-group">
-							<div class="col-md-6 col-md-offset-4">
-								<button type="submit" class="btn btn-primary" style="margin-right: 15px;">
-									Login
-								</button>
-
-								<a href="/password/email">Forgot Your Password?</a>
-							</div>
-						</div>
-					</form>
+			<div class="form-group">
+				<label class="col-md-4 control-label">Contraseña</label>
+				<div class="col-md-6">
+					<input type="password" class="form-control" name="password">
 				</div>
 			</div>
-		</div>
-	</div>
-</div> -->
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-8 my-login">Imagen de Fondo</div>
-		<div class="col-md-4">
-		<form class="form-horizontal" role="form" method="POST" action="/login">
-						<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-						<div class="form-group">
-							<label class="col-md-4 control-label">E-Mail Address</label>
-							<div class="col-md-6">
-								<input type="email" class="form-control" name="email" value="{{ old('email') }}">
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label class="col-md-4 control-label">Password</label>
-							<div class="col-md-6">
-								<input type="password" class="form-control" name="password">
-							</div>
-						</div>
-
-						<div class="form-group">
-							<div class="col-md-6 col-md-offset-4">
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" name="remember"> Remember Me
-									</label>
-								</div>
-							</div>
-						</div>
-
-						<div class="form-group">
-							<div class="col-md-6 col-md-offset-4">
-								<button type="submit" class="btn btn-primary" style="margin-right: 15px;">
-									Login
-								</button>
-
-								<a href="/password/email">Forgot Your Password?</a>
-							</div>
-						</div>
-					</form>
-		</div>
+			<div class="form-group">
+				<div class="col-md-6 col-md-offset-4">
+					<button type="submit" class="btn btn-primary" style="margin-right: 15px;">
+						Ingresar
+					</button>
+				</div>
+			</div>
+		</form>
 	</div>
 </div>
 @endsection
