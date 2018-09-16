@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);.main-auth {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+
+.banner {
+  background-image: url("/img/green.png");
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  width: 70%;
+}
+
+@media (max-width: 767px) {
+  .banner {
+    display: none;
+  }
+}
+
+.form-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f8fafc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  padding: 30px;
+  width: 30%;
+}
+
+@media (max-width: 767px) {
+  .form-container {
+    width: 100%;
+  }
+}
+
+.form-container .wrapper {
+  text-align: center;
+  width: 100%;
+}
+
+.form-container .logo {
+  margin-bottom: 60px;
+}
+
+.form-container .logo img {
+  max-width: 100%;
+}
+
+.form-container .inputs {
+  margin-bottom: 60px;
+}
+
+.icon-input {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border: 1px solid #606F7B;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.icon-input .icon {
+  color: #606F7B;
+  padding: 10px;
+}
+
+.icon-input .icon svg {
+  color: #606F7B;
+  fill: currentColor;
+  height: 16px;
+  width: 16px;
+}
+
+.icon-input input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 5px;
+  width: 100%;
+}
+
+.invalid-feedback {
+  display: block;
+}
+

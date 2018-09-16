@@ -1,0 +1,83 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+.main-auth {
+  align-items: center;
+  display: flex;
+  min-height: 100vh;
+}
+
+.banner {
+  background-image: url('/img/green.png');
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  width: 70%;
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.form-container {
+  align-items: center;
+  background-color: $white;
+  display: flex;
+  min-height: 100vh;
+  padding: 30px;
+  width: 30%;
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+
+  .wrapper {
+    text-align: center;
+    width: 100%;
+  }
+
+  .logo {
+    margin-bottom: 60px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .inputs {
+    margin-bottom: 60px;
+  }
+}
+
+.icon-input {
+  align-items: center;
+  background-color: white;
+  border: 1px solid #606F7B;
+  border-radius: 8px;
+  display: flex;
+
+  .icon {
+    color: #606F7B;
+    padding: 10px;
+
+    svg {
+      color: #606F7B;
+      fill: currentColor;
+      height: 16px;
+      width: 16px;
+    }
+  }
+
+  input {
+    appearance: none;
+    border: 0;
+    border-radius: 8px;
+    padding: 10px 5px;
+    width: 100%;
+  }
+}
+
+.invalid-feedback {
+  display: block;
+}
